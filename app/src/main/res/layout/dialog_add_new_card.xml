@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    >
+    <EditText
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_card_number"
+        android:inputType="number"
+        android:background="@drawable/border"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:hint="     Card Number" />
+
+
+    <EditText
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/edt_cvv"
+        android:inputType="number"
+        android:background="@drawable/border"
+        android:layout_below="@+id/edt_card_number"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:hint="    CVV"
+        />
+
+    <LinearLayout
+        android:id="@+id/lv1"
+        android:layout_below="@+id/edt_cvv"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_mnth"
+            android:padding="@dimen/_5sdp"
+            android:inputType="number"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:hint="   MM"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:id="@+id/edt_year"
+            android:background="@drawable/border"
+            android:hint="    YYYY"
+            android:layout_above="@+id/btn_save_card"
+            android:layout_toRightOf="@+id/edt_mnth"
+            android:layout_toEndOf="@+id/edt_mnth" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/lv1"
+        android:layout_margin="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:id="@+id/dialog_add_new_cancel"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:layout_height="@dimen/_30sdp"/>
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/btn_save_card"
+            android:text="@string/save_card"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:layout_below="@+id/lv1"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

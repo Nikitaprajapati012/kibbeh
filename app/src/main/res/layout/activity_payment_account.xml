@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.kibbeh.Activity.PaymentAccountActivity">
+
+    <include layout="@layout/actionbar"
+        android:id="@+id/actionbar">
+    </include>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/actionbar"
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/_30sdp">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/method"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+
+            android:text="@string/number"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="@string/Action"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lv1"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/activity_payment_card_list"></ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

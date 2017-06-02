@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+ >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/transparent_black"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            tools:context="com.app.archirayan.auctions.MainActivity"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView6"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:text="Start making cash by selling your stuff or find bargains for sale near you"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView7"
+                android:src="@drawable/application_logo"
+                android:layout_above="@+id/imageView6"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonLogin"
+                android:background="@drawable/fill_green_button"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_below="@+id/imageView6"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line_button"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:id="@+id/buttonRegister"
+                android:textAllCaps="false"
+                android:layout_below="@+id/buttonLogin"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

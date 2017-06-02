@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_terms_and_conditions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.kibbeh.Activity.TermsAndConditions">
+
+    <include layout="@layout/actionbar"
+        android:id="@+id/actionbar">
+    </include>
+
+    <WebView
+        android:id="@+id/act_term_condition_webview"
+        android:layout_below="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+</RelativeLayout>

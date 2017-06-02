@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_5sdp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCrediCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_credit_cart"
+            />
+
+        <TextView
+            android:text="@string/credit_card"
+            android:layout_toRightOf="@+id/ivCrediCard"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/adp_payment_cart_last_four"
+            android:layout_width="wrap_content"
+            android:text="**** 1234"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/adp_payment_cart_pay_with_this"
+            android:layout_width="wrap_content"
+            android:background="@color/blue"
+            android:layout_alignParentRight="true"
+            android:text="@string/pay_with_this"
+            android:textColor="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</LinearLayout>

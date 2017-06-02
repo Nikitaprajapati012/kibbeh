@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_5sdp">
+
+
+    <LinearLayout
+        android:id="@+id/lv1"
+        android:padding="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rltv">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:id="@+id/img"
+                android:src="@drawable/ic_credit_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Credit Card"
+                android:id="@+id/txt"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_toRightOf="@+id/img"
+                android:textSize="@dimen/_12sdp"/>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                    android:text="12345678"
+                    android:gravity="center"
+                    android:id="@+id/activity_credi_card_no"
+
+
+                    />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_weight="1"
+            android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:gravity="center"
+
+                    android:textStyle="bold"
+                    android:padding="@dimen/_4sdp"
+                    android:background="@color/red"
+                    android:text="@string/delete"
+                    android:textColor="@color/white"
+                    android:id="@+id/activity_txt_dlt" />
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

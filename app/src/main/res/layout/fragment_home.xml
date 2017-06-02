@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/viewPagerIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/pager_introduction"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/viewPagerCountDots"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+
+        </RelativeLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fitsSystemWindows="true"
+            tools:listitem="@layout/pageviever_pager_item" />
+
+
+        <LinearLayout
+            android:id="@+id/fragment_home_logo_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/viewPagerIndicator"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_frg_home_stor"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_k_logo" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/spinner_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Department"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_weight="1.5"
+                android:textColorHint="#05ab9a"
+                app:met_floatingLabel="normal"
+                android:gravity="center" />
+        </LinearLayout>
+
+
+        <!--<se.emilsjolander.stickylistheaders.StickyListHeadersListView-->
+            <!--android:id="@+id/list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/fragment_home_logo_linear"-->
+            <!--android:background="@color/white"-->
+            <!--android:divider="#FFFFFF"-->
+            <!--android:dividerHeight="@dimen/_5sdp" />-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recyclerview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/fragment_home_logo_linear"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:background="@color/white"-->
+            <!--android:dividerHeight="@dimen/_5sdp"-->
+            <!--android:clipToPadding="true"-->
+            <!--android:padding="16dp"-->
+            <!--android:saveEnabled="false" />-->
+        <!---->
+        <LinearLayout
+            android:id="@+id/frag_home_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fragment_home_logo_linear"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:dividerHeight="@dimen/_5sdp"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_empty_view"
+                android:text="@string/no_data_found"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="@dimen/_25sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

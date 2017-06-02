@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/actionbar_checkout"></include>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+      android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <TextView
+         android:id="@+id/act_order_list_succses"
+         android:text="@string/you_order_received"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/act_order_list_date_is"
+            android:layout_below="@+id/act_order_list_succses"
+            android:text="@string/your_delivery_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@+id/act_order_list_date_is"
+            android:text="01/03/1992"
+            android:id="@+id/act_order_list_date"
+            android:layout_below="@+id/act_order_list_succses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="@string/your_time_slot_is"
+            android:layout_below="@+id/act_order_list_date"
+            android:layout_width="wrap_content"
+            android:id="@+id/selected_time"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="@string/your_time_slot_is"
+            android:layout_toRightOf="@+id/selected_time"
+             android:layout_below="@+id/act_order_list_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/border"
+        android:layout_height="match_parent">
+
+
+      <TextView
+          android:text="@string/order_preview"
+          android:background="@drawable/border_brown"
+          android:gravity="center"
+          android:textSize="@dimen/_15sdp"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_30sdp" />
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="@drawable/call_border_left_right"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/product_image"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp" />
+
+                <TextView
+                    android:layout_weight="0.25"
+                    android:text="@string/product_name"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@drawable/call_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp" />
+
+                <TextView
+                    android:layout_weight="0.31"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@drawable/call_border"
+                    android:text="@string/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp" />
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:text="@string/price"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@drawable/call_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp" />
+            </TableRow>
+
+
+            <ListView
+
+                android:id="@+id/act_order_list_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

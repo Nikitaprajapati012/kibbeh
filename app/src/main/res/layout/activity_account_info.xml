@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar"></include>
+
+    <LinearLayout
+
+        android:id="@+id/activity_acount_info_accont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/account" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/_10sdp"
+            android:src="@drawable/ic_right_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_acount_info_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/address" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/_10sdp"
+            android:src="@drawable/ic_right_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_acount_info_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+
+            android:text="@string/paymentmethod" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/_10sdp"
+            android:src="@drawable/ic_right_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_acount_info_coupnes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/coupons" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/_10sdp"
+            android:src="@drawable/ic_right_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_acount_info_order_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/orderhistory" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/_10sdp"
+            android:src="@drawable/ic_right_arrow" />
+
+    </LinearLayout>
+
+</LinearLayout>

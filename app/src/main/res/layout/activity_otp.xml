@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/ic_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/actionbar"/>
+
+    <app.kibbeh.widget.MyFontTextViewTitle
+        android:id="@+id/textView"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:layout_gravity="center"
+        android:text="@string/otp"
+
+        android:textColor="@color/background"
+        android:textSize="@dimen/_35sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/background_white_corner"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <EditText
+            android:id="@+id/activity_otp_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/corner_white_edt"
+            android:hint="@string/enterotp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <Button
+            android:id="@+id/activity_btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/background_green_corner"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

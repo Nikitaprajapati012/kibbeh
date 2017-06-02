@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.kibbeh.Activity.PaymentActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_checkout"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:layout_margin="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/lv1"
+            android:layout_marginLeft="@dimen/_10sdp"
+             android:layout_marginRight="@dimen/_10sdp"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <TextView
+
+                android:id="@+id/txtview1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:text="Apply Coupen Code"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/act_paymet_cpn_code_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toEndOf="@+id/txtview1"
+                android:layout_toRightOf="@+id/txtview1"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:padding="@dimen/_5sdp" />
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="1.1"
+                android:background="@color/blue"
+                android:text="Apply"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv1"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:id="@+id/act_payment_add_new_card"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/add_new_card"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rltv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rv1">
+
+        <ListView
+            android:id="@+id/act_payment_card_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"></ListView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

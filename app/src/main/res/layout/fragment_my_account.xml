@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/frag_my_acount_lv_my_accont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/myaccount"
+            android:layout_weight="1"
+
+            />
+
+        <ImageView
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_right_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_my_acount_lv_terms_coondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_condition"
+            android:layout_weight="1"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_right_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_my_acount_lv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_item_Logout"
+            android:layout_weight="1"
+
+            android:id="@+id/textView3" />
+
+        <ImageView
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_right_arrow"/>
+
+    </LinearLayout>
+
+</LinearLayout>

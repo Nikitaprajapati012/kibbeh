@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/call_border_left_right"
+                android:layout_weight="0.25"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/adapter_order_iv_product"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_weight="0.25"
+                android:text="@string/product_name"
+                android:gravity="center"
+                android:id="@+id/adapter_order_tv_product_tv_product_name"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/call_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_weight="0.31"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/adapter_order_tv_product_quantity"
+                android:background="@drawable/call_border"
+                android:text="@string/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_weight="0.3"
+                android:text="@string/price"
+                android:gravity="center"
+                android:id="@+id/adapter_order_tv_price"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/call_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

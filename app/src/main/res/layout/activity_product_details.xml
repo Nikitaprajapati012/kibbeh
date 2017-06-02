@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar">
+
+    </include>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/activity_product_details_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_placeholder" />
+
+        <TextView
+            android:id="@+id/activity_product_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+
+            <TextView
+                android:id="@+id/activity_product_details_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/background_white_corner"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="0"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/activity_product_details_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_white_corner"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_up" />
+
+                <ImageView
+                    android:id="@+id/activity_product_details_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_white_corner"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_down" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/activity_product_totalprice"
+                android:text="$1.99"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/blue"
+                android:text="@string/add_product"
+                android:textColor="@color/white"
+                android:id="@+id/activity_product_details_add_cart" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_product_details_add_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/add_product"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/background_white_corner"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="Nutriation Facts"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/activity_product_details_nutriation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/_15sdp"
+                android:text="$1.99"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/background_white_corner"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/description"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <TextView
+                    android:id="@+id/activity_product_details_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="left|center"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:scrollbars="vertical"
+                    android:text="Data"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_16sdp" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

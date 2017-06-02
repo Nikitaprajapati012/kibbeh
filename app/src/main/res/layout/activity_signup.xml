@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_login_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/background_white_corner"
+                    android:text="@string/login" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:orientation="vertical"
+                    tools:context="com.app.archirayan.auctions.MainActivity">
+
+
+                    <app.kibbeh.widget.MyFontTextViewTitle
+                        android:id="@+id/tv_available_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="We’ll be in 212121 soon!"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_25sdp"
+                        android:textStyle="bold" />
+
+                    <app.kibbeh.widget.MyFontTextViewTitle
+                        android:id="@+id/textViewd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/linearLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Sign up and receive"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <app.kibbeh.widget.MyFontTextViewTitle
+                        android:id="@+id/textViewdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/linearLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="free delivery"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <app.kibbeh.widget.MyFontTextViewTitle
+                        android:id="@+id/textViewdcd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/linearLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="on your first order over $10"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/_10sdp"
+
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fillViewport="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/background_white_corner"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/activity_signup_fullname"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/_2sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/corner_white_edt"
+                                        android:hint="First name"
+                                        android:padding="@dimen/_10sdp"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <EditText
+                                        android:id="@+id/activity_signup_email"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_2sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/corner_white_edt"
+                                        android:hint="Last name"
+                                        android:padding="@dimen/_10sdp"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/activity_signup_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@drawable/corner_white_edt"
+                                    android:hint="Email for receipts"
+                                    android:padding="@dimen/_10sdp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_12sdp" />
+                              <!--  <EditText
+                                    android:id="@+id/activity_signup_phone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@drawable/corner_white_edt"
+                                    android:hint="Phone"
+                                    android:inputType="number"
+                                    android:padding="@dimen/_10sdp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_12sdp" />-->
+
+                                <EditText
+                                    android:id="@+id/activity_signup_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@drawable/corner_white_edt"
+                                    android:hint="Choose password"
+                                    android:inputType="textPassword"
+                                    android:padding="@dimen/_10sdp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <EditText
+                                    android:id="@+id/activity_signup_phone_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@drawable/corner_white_edt"
+                                    android:hint="Enter Phoneno"
+                                    android:inputType="textPassword"
+                                    android:padding="@dimen/_10sdp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+                                <Button
+                                    android:id="@+id/activity_signup_submit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/background_green_corner"
+                                    android:text="Shop now"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/_15sdp" />
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

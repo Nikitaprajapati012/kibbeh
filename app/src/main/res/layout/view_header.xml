@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:background="@drawable/border"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+<TextView
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textSize="15sp"
+    android:layout_weight="0.5"
+    android:id="@+id/store_name"
+    android:textColor="@android:color/black"
+    tools:text="Products store name"
+   />
+    <TextView
+        android:id="@+id/store_minprice"
+        android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_weight="1.5"
+    android:textSize="15sp"
+    android:textColor="@android:color/black"
+    tools:text="mimprice"
+   />
+</LinearLayout>

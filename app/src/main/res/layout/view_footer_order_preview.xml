@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:background="@drawable/call_border_left_right"
+            android:gravity="center"
+            android:text="@string/order_total"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/view_footer_order_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:background="@drawable/call_border"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="2000"
+            android:textColor="@color/black" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:background="@drawable/call_border_left_right"
+            android:gravity="center"
+            android:text="@string/delivery_charge_plus"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/view_footer_order_deliery_charge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:background="@drawable/call_border"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="2000"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:background="@drawable/call_border_left_right"
+            android:gravity="center"
+            android:text="@string/grand_total"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/view_footer_order_tv_grand_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:background="@drawable/call_border"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="2000"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/call_border_left_right"
+        android:gravity="right|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@color/blue"
+            android:gravity="right|center_vertical"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/return_store"
+            android:textColor="@color/white"
+
+            />
+
+    </TableRow>
+
+
+</LinearLayout>
